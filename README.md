@@ -24,8 +24,7 @@ Cette application Todo utilise React et DaisyUI avec le thème **Autumn**. L’i
 1. Cloner le dépôt :
 
 ```bash
-git clone https://github.com/ton-utilisateur/ton-repo-todo.git
-cd ton-repo-todo
+git clone git@github.com:djelines/My-Autumn-Notebook.git
 ```
 
 2. Installer les dépendances :
