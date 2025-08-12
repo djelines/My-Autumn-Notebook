@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# Todo App - My-Autumn-Notebook 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Cette application Todo utilise React et DaisyUI avec le thème **Autumn**. L’interface reflète l’ambiance automnale avec des couleurs chaudes et une UX fluide pour gérer ses tâches.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Fonctionnalités principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Ajout de tâches avec priorité (Urgente, Moyenne, Basse)
+* Sélection multiple de tâches pour suppression
+* Filtrage des tâches par priorité
+* Style chaleureux avec arrière-plan automnal flouté
+* Gestion claire des priorités avec badges colorés
+* Retour à la ligne forcé pour les textes longs
+* Boutons et inputs arrondis pour une UI moderne
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Cloner le dépôt :
+
+```bash
+git clone git@github.com:djelines/My-Autumn-Notebook.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Installer les dépendances :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Lancer l’application en mode développement :
+
+```bash
+npm run dev
+```
+
+---
+
+## Utilisation
+
+* Écris ta tâche dans le champ "Ajoutez une tâche..."
+* Choisis la priorité dans la liste déroulante
+* Clique sur "Ajouter" pour créer la tâche
+* Utilise les filtres pour afficher selon la priorité
+* Sélectionne plusieurs tâches via checkbox pour suppression groupée
+
